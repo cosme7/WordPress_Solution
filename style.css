@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
     box-sizing: border-box;
@@ -22,11 +23,13 @@ body {
 :root{
   --ff-primary: 'Oxanium', cursive;
   --ff-secondary: 'Poppins', sans-serif;
+  --ff-third: 'Work Sans', sans-serif;
   /*  */
   --fw-700: 700;
   --fw-500: 500;
   --fw-400: 400;
   /*  */
+  --spacer-xbg: 9rem;
   --spacer-bg: 4rem;
   --spacer-md: 2rem;
   --spacer-sm: 1rem;
@@ -142,6 +145,7 @@ img, picture{
   z-index: 9999;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .sr_only{
@@ -389,7 +393,8 @@ img, picture{
 /** MAIN 1º CONTAINER */
 
 .services--container{
-  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -512,3 +517,175 @@ img, picture{
 }
 
 /** MAIN 2º CONTAINER */
+
+.why-us--container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-block: var(--spacer-xbg);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 5vw, 5.5rem);
+  background: linear-gradient(var(--bg-accent) 50vw, var(--bg-light) 50vw);
+}
+
+.why-us-txt{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.why-us_p{
+  font-size: clamp(0.75rem, 1.8vw, 2rem);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  color: var(--clr-light);
+}
+
+.why-us_h2{
+  max-width: 20ch;
+  font-size: clamp(1rem, 5vw, 5.5rem);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-700);
+  color: var(--clr-light);
+}
+
+.why-us-fig{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.why-us_video{
+  width: 100%;
+}
+
+.why-us_play{
+  width: 10%;
+  position: absolute;
+  bottom: 40%;
+  left: 47%;
+}
+
+.why-us-cards{
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 7vw, 7.5rem);
+  list-style: none;
+}
+
+.why_cards{
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(1rem, 1.2vw, 1.5rem);
+}
+
+.whyus_img{
+  width: clamp(30px, 2.5vw, 70px);
+  aspect-ratio: 1;
+}
+
+.whyus_txt{
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(1rem, 1.5vw, 1.7rem);
+}
+
+.whyus_h3{
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-700);
+  color: var(--clr-dark);
+}
+
+.whyus_p{
+  max-width: 60ch;
+  font-size: clamp(0.75rem, 1vw, 2rem);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  color: var(--clr-dark);
+}
+
+.whyus_anchor{
+  font-weight: var(--fw-700);
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.why-us-numbers{
+  width: 100%;
+  padding-block: var(--spacer-bg);
+  background-color: var(--bg-accent);
+}
+
+.why-numbers-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.why-us_numbers{
+  font-size: clamp(1rem, 5vw, 5.5rem);
+  font-family: var(--ff-third);
+  font-weight: var(--fw-700);
+  color: var(--clr-light);
+  position: relative;
+}
+
+.why-us_border::after{
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 1%;
+  height: clamp(20px, 7.5vw, 150px);
+  border-right: 2px solid white;
+}
+
+.why-us_description{
+  max-width: 20ch;
+  font-size: clamp(0.75rem, 1.8vw, 2rem);
+  font-family: var(--ff-third);
+  font-weight: var(--fw-400);
+  opacity: .8;
+  color: var(--clr-light);
+}
+
+@media (max-width: 48em){
+  .why-us--container{
+    padding-block: var(--spacer-sm) var(--spacer-md);
+  }
+
+  .why-us-txt,
+  .why-us-fig{
+    width: 100%;
+    padding-inline: var(--spacer-xsm);
+  }
+
+  .why-us_h2{
+    max-width: 100%;
+  }
+
+  .why-us_border::after{
+    top: 5%;
+  }
+
+  .why-us-cards{
+    width: 100%;
+    padding-inline: var(--spacer-xsm);
+    grid-template-columns: 1fr;
+  }
+
+  .why-us-numbers{
+    padding-block: var(--spacer-sm);
+  }
+
+  .why-numbers-wrapper{
+    width: 100%;
+  }
+}
