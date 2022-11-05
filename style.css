@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 *::before,
@@ -53,6 +54,31 @@ img, picture{
   max-width: 100%;
   display: block;
 }
+
+/** TABLE OF CONTENTS */
+
+/** HEADER */
+/** HEADER CONTAINER */
+/** NAV CONTAINER */
+/** MENU */
+/** WHEN MENU OPENS */
+/** HERO CONTAINER */
+/** PARTNER CONTAINER */
+
+/** MAIN */
+/** MAIN 1º CONTAINER */
+/** MAIN 2º CONTAINER */
+/** MAIN 3º CONTAINER */
+/** MAIN 4º CONTAINER */
+/** MAIN 5º CONTAINER */
+
+/** FOOTER */
+
+/** TABLE OF CONTENTS ENDS */
+
+/*  */
+
+/** HEADER CONTAINER */
 
 .h--container{
   max-width: 1920px;
