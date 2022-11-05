@@ -12,7 +12,7 @@ li<!DOCTYPE html>
     <header>
         <section class="h--container"> 
 
-            <img class="h_symbol" src="./Assets/header_05.svg" alt="symbol">
+            <img class="h_symbol" src="./Assets/header_05.svg" alt="Logo">
 
             <section class="h-nav-container">
                 <img class="h_logo" src="./Assets/header_01.svg" alt="Logo">
@@ -23,18 +23,18 @@ li<!DOCTYPE html>
                 </button>
                 <nav class="primary-nav" id="primary-nav">
                     <ul class="h_ul" role='list'>
-                        <a href="#services" class="h_anchor">
-                            <li class="h_li">Services</li>
-                        </a>
-                        <a href="#why_us" class="h_anchor">
-                            <li class="h_li">Why Us</li>
-                        </a>
-                        <a href="#pricing" class="h_anchor">
-                            <li class="h_li">Pricing</li>
-                        </a>
-                        <a href="#review" class="h_anchor">
-                            <li class="h_li">Review</li>
-                        </a>
+                        <li class="h_li">
+                            <a href="#services" class="h_anchor">Services</a>
+                        </li>
+                        <li class="h_li">
+                            <a href="#why_us" class="h_anchor">Why Us</a>
+                        </li>
+                        <li class="h_li">
+                            <a href="#pricing" class="h_anchor">Pricing</a>
+                        </li>
+                        <li class="h_li">
+                            <a href="#review" class="h_anchor">Review</a>
+                        </li>
                     </ul>
                     <a href="#">
                         <button class="h_nav_btn">Get Quotes</button>
@@ -44,10 +44,10 @@ li<!DOCTYPE html>
     
             <section class="h-hero-container">
             <div class="hero-txt">
-                    <h2 class="hero_h2">WordPress 
+                    <h1 class="hero_h2">WordPress 
                         <span class="span_solutions"><img src="./Assets/header_04.svg" alt="">Solutions </span>
                         <span class="span_delivery">Delivered!</span>
-                    </h2>
+                    </h1>
                     <p class="hero_p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
                 </div>
                 <img class="hero_desktop" src="./Assets/header_02.png" alt="hero">
@@ -79,7 +79,7 @@ li<!DOCTYPE html>
         <section class="services--container" id="services">
             <h2 class="services_h2">Our Services</h2>
             <p class="services_p">Trusted over 1000+ clients</p>
-            <ul class="services-card" role="services card list">
+            <ul class="services-card">
                 <li class="card-wrapper">
                     <svg class="cards_icon" data-type="card_inverted">
                         <use xlink:href="./Assets/main C01_cards.svg#circle"></use>
@@ -477,25 +477,57 @@ li<!DOCTYPE html>
                 <p class="f_p_fw">Support</p>
                 <p class="f_p_fw">Company</p>
                 <p class="f_p_fw">Company</p>
-                <ul class="footer-ul">
-                    <a class="footer_anchor" href="#"><li class="footer_li">Pricing</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Documentation</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Sitemap</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Documentation</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Documentation</li></a>
-                </ul>
-                <ul class="footer-ul">
-                    <a class="footer_anchor" href="#"><li class="footer_li">About Us</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Partners</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Testomonials</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Portfolio</li></a>
-                </ul>
-                <ul class="footer-ul">
-                    <a class="footer_anchor" href="#"><li class="footer_li">About Us</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Partners</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Testomonials</li></a>
-                    <a class="footer_anchor" href="#"><li class="footer_li">Portfolio</li></a>
-                </ul>
+                <nav aria-label="secondary navigation">
+                    <ul class="footer-ul">
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Pricing</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Documentation</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Sitemap</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Documentation</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Documentation</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="third navigation">
+                    <ul class="footer-ul">
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">About Us</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Partners</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Testomonials</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav aria-label="four-navigation">
+                    <ul class="footer-ul">
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">About Us</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Partners</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Testomonials</a>
+                        </li>
+                        <li class="footer_li">
+                            <a class="footer_anchor" href="#">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="footer-form-wrapper">
                 <p class="f_p_fw f_p_mobile">Subscribe To Our Newsletter</p>

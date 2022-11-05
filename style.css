@@ -108,18 +108,18 @@ img, picture{
   display: flex;
   justify-content: center;
   gap: clamp(1rem, 4vw, 4.5rem);
+  list-style: none;
 }
 
-.h_li{
+.h_anchor{
   width: 85px;
   font-size: clamp(1rem, 1.2vw, 1.4rem);
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
   color: var(--clr-dark);
-  list-style: none;
 }
 
-.h_anchor .h_li:where(:hover, :focus){
+.h_anchor:where(:hover, :focus){
   font-weight: var(--fw-500);
 }
 
@@ -1156,14 +1156,11 @@ img, picture{
 }
 
 .footer_anchor{
-  text-decoration: none;
-}
-
-.footer_li{
   font-size: clamp(0.75rem, 1vw, 1.5rem);
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
   color: var(--clr-light);
+  text-decoration: none;
   opacity: 0.6;
 }
 
